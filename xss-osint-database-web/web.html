@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xss-osint DataBase</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="databases-list" id="databasesList">
+        </div>
 
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Важно</h4>
+                    <p>Использование - исключительно в исследовательских целях. Ответственность лежит на пользователе.</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-info-circle"></i> Информация</h4>
+                    <p>Данные обновляются ежедневно. Доступ предоставляется по подписке.</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-link"></i> Ссылки</h4>
+                    <a href="https://t.me/ваш_бот" target="_blank">Telegram Bot</a>
+                    <a href="https://t.me/ваш_канал" target="_blank">Telegram Channel</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 xss-osint. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal" id="databaseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="info-item">
+                        <span class="info-label"><i class="fas fa-database"></i> Количество записей:</span>
+                        <span class="info-value" id="modalCount"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fas fa-info-circle"></i> Описание:</span>
+                        <p id="modalDesc"></p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fas fa-calendar-alt"></i> Дата обновления:</span>
+                        <span class="info-value">2024-01-15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="web.js"></script>
+</body>
+</html>
