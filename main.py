@@ -72,7 +72,7 @@ def callback_query(call):
 <b>Яндекс.Музыка:</b> <code>10 млн.</code>"""
             
             markup = types.InlineKeyboardMarkup(row_width=2)
-            btn1 = types.InlineKeyboardButton("🛢All DataBase", url="https://xss-osint-database.onrender.com")
+            btn1 = types.InlineKeyboardButton("🛢All DataBase", url="https://xss-osint-database-web.onrender.com")
             btn2 = types.InlineKeyboardButton("🔙Back", callback_data='back_to_main')
             markup.add(btn1, btn2)
             
